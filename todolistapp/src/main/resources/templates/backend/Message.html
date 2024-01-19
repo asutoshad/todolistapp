@@ -1,0 +1,43 @@
+<th:block th:insert="backend/Head.html" />
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Messages</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Message</th>
+  </tr>
+  <tr th:each="d : ${mlist}">
+	  			<td>[[${d.name}]]</td>
+				 <td>[[${d.email}]]</td>
+				 <td>[[${d.message}]]</th>
+   
+  </tr>
+
+				
+			
+</table>
+
+</body>
+
+

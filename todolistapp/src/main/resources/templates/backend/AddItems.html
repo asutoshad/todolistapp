@@ -1,0 +1,173 @@
+<th:block th:insert="backend/Head.html" />
+<!-- / Navbar -->
+
+<!-- Content wrapper -->
+<div class="content-wrapper">
+	<!-- Content -->
+
+	<div class="container-xxl flex-grow-1 container-p-y">
+		<h4 class="py-3 mb-4"><span class="text-muted fw-light">Forms /</span> Create New Blog</h4>
+
+		<div class="row">
+
+
+
+			<!-- Form controls -->
+
+
+			<!-- Input Sizing -->
+
+
+			<!-- Default Checkboxes and radios & Default checkboxes and radios -->
+
+			<form action="/additems" method="post" enctype="multipart/form-data">
+				<div class="col-xl-12">
+					<!-- HTML5 Inputs -->
+					<div class="card mb-4">
+						<h5 class="card-header">Write Blog</h5>
+						<div class="card-body">
+							<div class="mb-3 row">
+								<label for="html5-text-input" class="col-md-2 col-form-label">Title</label>
+								<div class="col-md-10">
+									<input class="form-control" type="text" id="title" name="title" />
+								</div>
+							</div>
+							<div class="mb-3 row">
+
+								<label for="html5-password-input" class="col-md-2 col-form-label">Summary</label>
+								<div class="col-md-10">
+									<textarea class="form-control" type="text" id="summary" name="summary" cols="20"
+										rows="3"></textarea>
+
+								</div>
+							</div>
+
+							<div class="mb-3 row">
+								<label for="html5-email-input" class="col-md-2 col-form-label">Category</label>
+								<div class="col-md-10">
+									<select name="category" id="category" class="form-control">
+										<option value="Programming">Programming</option>
+										<option value="Tech">Tech</option>
+										<option value="Anime">Anime</option>
+										<option value="Bike">Bike</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="mb-3 row">
+								<label for="html5-tel-input" class="col-md-2 col-form-label">Content</label>
+								<div class="col-md-10">
+									<textarea name="content" id="content" cols="30" rows="10"></textarea>
+									
+								</div>
+							</div>
+
+							<div class="mb-3 row">
+								<label for="html5-number-input" class="col-md-2 col-form-label">Author Name: </label>
+								<div class="col-md-10">
+									<input class="form-control" type="text" value="Asutosh" id="author" name="author" />
+								</div>
+							</div>
+
+							<div class="mb-3 row">
+								<label for="html5-date-input" class="col-md-2 col-form-label">Date</label>
+								<div class="col-md-10">
+									<input class="form-control" type="date" id="html5-date-input" name="date" />
+								</div>
+							</div>
+
+
+						
+
+
+						</div>
+					</div>
+
+
+
+					<!-- File input -->
+					<div class="card">
+						<h5 class="card-header">File input</h5>
+						<div class="card-body">
+							<div class="mb-3">
+								<label for="formFile" class="form-label">Default file input example</label>
+								<input class="form-control" type="file" id="image" name="photo" />
+							</div>
+
+						</div>
+						<div class="row p-2">
+							<div class="col-4"></div>
+							<div class="col-6">
+								<input type="submit" value="add" class="btn btn-success btn-lg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- / Content -->
+
+	<!-- Footer -->
+	<footer class="content-footer footer bg-footer-theme">
+		<div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+			<div class="mb-2 mb-md-0">
+
+
+			</div>
+
+		</div>
+	</footer>
+	<!-- / Footer -->
+
+	<div class="content-backdrop fade"></div>
+</div>
+<!-- Content wrapper -->
+</div>
+<!-- / Layout page -->
+</div>
+
+<!-- Overlay -->
+<div class="layout-overlay layout-menu-toggle"></div>
+</div>
+<!-- / Layout wrapper -->
+
+<script src="js/ckeditor5/ckeditor.js"></script>
+
+<script>
+	ClassicEditor
+		.create(document.querySelector('#content'))
+		.then(content => {
+			console.log(content);
+		})
+		.catch(error => {
+			console.error(error);
+		});
+</script>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+
+<script src="assets/vendor/libs/jquery/jquery.js"></script>
+<script src="assets/vendor/libs/popper/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/js/menu.js"></script>
+
+<!-- endbuild -->
+
+<!-- Vendors JS -->
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<!-- Page JS -->
+
+<script src="assets/js/form-basic-inputs.js"></script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
